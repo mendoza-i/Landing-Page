@@ -15,10 +15,24 @@
 <body>  
 
 <!--NAVIGATION BAR-->
-<nav class="navbar navbar-expand-md navbar-light bg-light">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sticky Navbar Example</title>
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <!-- Main Navbar with Sticky Behavior -->
+  <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
     <div class="container-xxl">
       <a href="#intro" class="navbar-brand">
-        <span class="fw-bold text-secondary">APPLE</span>
+        <span class="fw-bold text-secondary">HOME</span>
       </a>
       <!-- Toggle button -->
       <button
@@ -32,20 +46,20 @@
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <!-- Collapsible Navbar LINKS -->
-      <div class="collapse navbar-collapse justify-content-end align-items-center" id="main-nav">
+      <!--Navbar LINKS -->
+      <div
+        class="collapse navbar-collapse justify-content-end align-items-center"
+        id="main-nav"
+      >
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="#about">About </a>
+            <a class="nav-link" href="#about">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#reviews">Reviews</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#contact">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#pricing">Pricing</a>
           </li>
           <li class="nav-item ms-2 d-none d-md-inline">
             <a class="btn btn-secondary" href="#pricing">Shop Now</a>
@@ -54,7 +68,7 @@
       </div>
     </div>
   </nav>
-  
+
 
 <!--MAIN INTRO TEXT-->
 <section id="intro">
@@ -62,74 +76,241 @@
         <div class="row justify-content-center align-items-center">
             <div class="col-md-5 text-center text-md-start">
                 <h1>
-                    <div class="dislplay-2">Tite/Life</div>
-                    <div class="display-5 text-muted"> Randomly hard and soft</div>
+                    <div class="dislplay-1">RockPal</div>
+                    <div class="display-5 text-muted">You deserve a <strong>solid</strong> purchase</div>
                 </h1>
-                <p class="lead my-4 text-muted">Welcome to our store, where innovation meets simplicity. Discover products that blend cutting-edge design with seamless functionality. Whether you're here to find something new or just browsing, we’re here to make your experience effortless and enjoyable. Explore, and see what’s next!</p>
+                <p class="lead my-4 text-muted">Welcome to RockPal, where rocks aren't just rocks—they're lifelong companions! No feeding, no mess, just pure stony silence. Adopt a rock today and experience a pet that truly understands you (because it never talks back). Dig in and meet your perfect pet!</p>
                 <a href="pricing" class="btn btn-secondary btn-large"> Buy Now</a>
             </div>
             <div class="col-md-5 text-center d-none d-md-block">
-                <img class="img-fluid" src="images/apple1.jpg" alt="picure">
+                <img class="img-fluid" src="images/logo.png" alt="picure">
             </div>
         </div>
     </div>
 </section>
     
+<!-- CAROUSEL SECTION -->
+<div id="carouselExampleDark" class="carousel carousel-dark slide pb-3" data-bs-ride="carousel"data-bs-pause="false">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="2000"> <!-- 5 seconds per slide -->
+        <img src="images/rockpet1.jpg" class="d-block w-100" alt="..." style="height: 900px; object-fit: cover;">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>Adopt a Rock!</h1>
+          <p>Browse and choose your new best rock friend.</p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="images/accesories.jpg" class="d-block w-100" alt="..." style="height: 900px; object-fit: cover;">
+        <div class="carousel-caption d-none d-md-block" style="color: white;">
+          <h1>Pet Rock Accessories</h1>
+          <p>Stylish tiny hats, googly eyes, and custom rock beds.</p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="images/norefunds.webp" class="d-block w-100" alt="..." style="height: 900px; object-fit: cover;">
+        <div class="carousel-caption d-none d-md-block" style="color: white;">
+          <h1>Return Policy</h1>
+          <p>No refunds—your rock already loves you.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+</div>
 
-<!-- BACKGROUND IMAGES (EXPERIMENT) -->
-<div class="container-fluid p-0 pb-3">
-    <div class="row m-0">
-        <!-- black background-->
-        <div class="col-12 p-0 position-relative">
-            <img src="images/black.jpg" class="img-fluid w-100" alt="Responsive Image" style="height: 500px; object-fit: cover;">
-            
-            <div class="position-absolute top-50 start-50 translate-middle text-white" style="font-size: 2rem;">
-                HELLO WORLD
+
+
+  
+
+<!-- ITEMS (EXPERIMENT) -->
+<div class="container py-5">
+    <div class="row">
+        <!-- Pet Rock Item -->
+        <div class="col-12 col-sm-6 col-md-4 mb-4">
+            <div class="card shadow-sm">
+                <img src="images/petroock.png" class="card-img-top" alt="Classic Rock">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Classic Rock</h5>
+                    <p class="card-text">A timeless pet rock companion.</p>
+                    <p class="fw-bold">$9.99</p>
+                    <a href="#" class="btn btn-primary">Buy Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Repeat for 8 more items -->
+        <div class="col-12 col-sm-6 col-md-4 mb-4">
+            <div class="card shadow-sm">
+                <img src="images/rockpet1.jpg" class="card-img-top" alt="Luxury Rock">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Luxury Rock</h5>
+                    <p class="card-text">A premium rock for elite collectors.</p>
+                    <p class="fw-bold">$29.99</p>
+                    <a href="#" class="btn btn-primary">Buy Now</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 mb-4">
+            <div class="card shadow-sm">
+                <img src="images/pebble2.png" class="card-img-top" alt="Mini Pebble Pet">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Mini Pebble Pet</h5>
+                    <p class="card-text">A tiny rock with a big personality.</p>
+                    <p class="fw-bold">$4.99</p>
+                    <a href="#" class="btn btn-primary">Buy Now</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 mb-4">
+            <div class="card shadow-sm">
+                <img src="rock4.jpg" class="card-img-top" alt="Glow-in-the-Dark Rock">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Glow-in-the-Dark Rock</h5>
+                    <p class="card-text">Your rock will never be lost at night.</p>
+                    <p class="fw-bold">$12.99</p>
+                    <a href="#" class="btn btn-primary">Buy Now</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 mb-4">
+            <div class="card shadow-sm">
+                <img src="rock5.jpg" class="card-img-top" alt="Collector’s Edition Rock">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Collector’s Edition</h5>
+                    <p class="card-text">A rare rock for serious collectors.</p>
+                    <p class="fw-bold">$49.99</p>
+                    <a href="#" class="btn btn-primary">Buy Now</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 mb-4">
+            <div class="card shadow-sm">
+                <img src="rock6.jpg" class="card-img-top" alt="Custom Painted Rock">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Custom Painted Rock</h5>
+                    <p class="card-text">Personalize your rock with custom art.</p>
+                    <p class="fw-bold">$19.99</p>
+                    <a href="#" class="btn btn-primary">Buy Now</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 mb-4">
+            <div class="card shadow-sm">
+                <img src="rock7.jpg" class="card-img-top" alt="Pet Rock Starter Kit">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Pet Rock Starter Kit</h5>
+                    <p class="card-text">Everything you need for your new rock.</p>
+                    <p class="fw-bold">$14.99</p>
+                    <a href="#" class="btn btn-primary">Buy Now</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 mb-4">
+            <div class="card shadow-sm">
+                <img src="rock8.jpg" class="card-img-top" alt="Rock Habitat">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Rock Habitat</h5>
+                    <p class="card-text">A cozy home for your pet rock.</p>
+                    <p class="fw-bold">$24.99</p>
+                    <a href="#" class="btn btn-primary">Buy Now</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 mb-4">
+            <div class="card shadow-sm">
+                <img src="rock9.jpg" class="card-img-top" alt="Rock Accessories Pack">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Rock Accessories Pack</h5>
+                    <p class="card-text">Includes hats, glasses, and stickers!</p>
+                    <p class="fw-bold">$8.99</p>
+                    <a href="#" class="btn btn-primary">Buy Now</a>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
-<div class="container-fluid p-0 pb-3">
-    <div class="row m-0">
-        <!-- black background-->
-        <div class="col-12 p-0 position-relative">
-            <img src="images/black.jpg" class="img-fluid w-100" alt="Responsive Image" style="height: 500px; object-fit: cover;">
-            <!-- Text over the background -->
-            <div class="position-absolute top-50 start-50 translate-middle text-white" style="font-size: 2rem;">
-                HELLO WORLD
+
+
+
+<!--FOOTER SECTION {EXPERIMENTAL}-->
+<footer class="bg-light text-dark pt-4">
+    <div class="container text-center">
+        <div class="d-flex flex-wrap justify-content-center">
+            <div class="col-md-2 mx-3">
+                <h6 class="fw-bold">Shop Pet Rocks</h6>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-dark text-decoration-none">Classic Rocks</a></li>
+                    <li><a href="#" class="text-dark text-decoration-none">Luxury Rocks</a></li>
+                    <li><a href="#" class="text-dark text-decoration-none">Mini Pebble Pets</a></li>
+                    <li><a href="#" class="text-dark text-decoration-none">Custom Rocks</a></li>
+                    <li><a href="#" class="text-dark text-decoration-none">Rock Accessories</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 mx-3">
+                <h6 class="fw-bold">Pet Rock Care</h6>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-dark text-decoration-none">Care Guide</a></li>
+                    <li><a href="#" class="text-dark text-decoration-none">Training Tips</a></li>
+                    <li><a href="#" class="text-dark text-decoration-none">Decor Ideas</a></li>
+                    <li><a href="#" class="text-dark text-decoration-none">Pet Rock Insurance</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 mx-3">
+                <h6 class="fw-bold">Help & Support</h6>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-dark text-decoration-none">Order Status</a></li>
+                    <li><a href="#" class="text-dark text-decoration-none">Shipping & Delivery</a></li>
+                    <li><a href="#" class="text-dark text-decoration-none">Return Policy</a></li>
+                    <li><a href="#" class="text-dark text-decoration-none">FAQs</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 mx-3">
+                <h6 class="fw-bold">For Collectors</h6>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-dark text-decoration-none">Rare Rocks</a></li>
+                    <li><a href="#" class="text-dark text-decoration-none">Limited Editions</a></li>
+                    <li><a href="#" class="text-dark text-decoration-none">Collector's Club</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 mx-3">
+                <h6 class="fw-bold">Our Story</h6>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-dark text-decoration-none">About Us</a></li>
+                    <li><a href="#" class="text-dark text-decoration-none">Sustainability</a></li>
+                    <li><a href="#" class="text-dark text-decoration-none">Contact Us</a></li>
+                </ul>
             </div>
         </div>
-    </div>
-</div>
 
-<div class="container-fluid p-0 pb-3">
-    <div class="row m-0">
-        <!-- black background -->
-        <div class="col-12 p-0">
-            <img src="images/black.jpg" class="img-fluid w-100" alt="Responsive Image" style="height: 500px; object-fit: cover;">
+        <hr>
+
+        <div class="text-center text-muted small pb-3">
+            <p>© 2025 Pet RockPal. All rights reserved.</p>
+            <p><a href="#" class="text-muted text-decoration-none">Privacy Policy</a> | <a href="#" class="text-muted text-decoration-none">Terms of Service</a> | <a href="#" class="text-muted text-decoration-none">Site Map</a></p>
         </div>
     </div>
-</div>
-
-<div class="container pb-5">
-    <div class="row justify-content-center">
-        <!-- First Image -->
-        <div class="col-md-6">
-            <img src="images/apple.jpg" class="img-fluid rounded" alt="img 1">
-        </div>
-        <!-- Second Image -->
-        <div class="col-md-6">
-            <img src="images/apple.jpg" class="img-fluid rounded" alt="img 2">
-        </div>
-    </div>
-</div>
-
-
-<!--idk-->
-
-
+</footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
 </body>
 </html>
